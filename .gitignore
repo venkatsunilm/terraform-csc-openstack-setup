@@ -1,0 +1,61 @@
+# General
+.DS_Store
+Thumbs.db
+
+# DevContainer
+.devcontainer/.env
+.devcontainer/*.log
+.devcontainer/.vscode-server/
+.devcontainer/.python_history
+.devcontainer/.bash_history
+.devcontainer/tmp/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+crash.log
+
+# IDE Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Files
+*.log
+*.bak
+*.tmp
+*.backup
+*.old
+
+# Python (if applicable in the project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env/
+
+# Node.js (if applicable in the project)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Other Common Files
+*.lock
+*.key
+*.pem
+*.crt
+*.envrc
+*.swp
+*.swo
+*.orig
+*.rej
+*.bak
+*.tmp
+project_2011705-openrc.sh

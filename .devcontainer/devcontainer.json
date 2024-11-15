@@ -1,0 +1,18 @@
+{
+	"name": "Ubuntu",
+	"image": "ubuntu:22.04",
+	"postCreateCommand": "apt-get update && apt-get install -y wget gnupg software-properties-common python3-pip && wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg && echo 'deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com jammy main' | tee /etc/apt/sources.list.d/hashicorp.list && apt-get update && apt-get install -y terraform && pip3 install python-openstackclient",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"hashicorp.terraform",
+				"ms-azuretools.vscode-docker"
+			],
+			"settings": {
+				"[terraform]": {
+					"editor.formatOnSave": true
+				}
+			}
+		}
+	}
+}
